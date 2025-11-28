@@ -45,7 +45,7 @@
                                 Class.forName("com.mysql.cj.jdbc.Driver");
                                 con = DriverManager.getConnection(
                                         "jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
-                                        "root", "mink20685");
+                                        "root", "password");
 
                                 String sql = "SELECT b.id_member, r.username, c.title, c.cover "
                                         + "FROM bookmark b "

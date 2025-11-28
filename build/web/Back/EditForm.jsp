@@ -63,7 +63,7 @@
                 Statement s = null;
                 //    try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                connect = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?autoReconnect=true&useSSL=false", "root", "mink20685");
+                connect = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?autoReconnect=true&useSSL=false", "root", "password");
                 s = connect.createStatement();
                 String sql = "SELECT * FROM  cartoon WHERE id_cartoon= '" + request.getParameter("id_cartoon") + "'  ";
                 ResultSet rec = s.executeQuery(sql);

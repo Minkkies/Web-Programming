@@ -54,7 +54,7 @@ public class UploadEpisode extends HttpServlet {
             conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false",
                     "root",
-                    "mink20685"
+                    "password"
             );
 
             // รับค่าจาก form ค่าที่รับจากฟอร์มจะเป็น String เสมอ

@@ -21,7 +21,7 @@ public class MyCon {
     public Connection myConnect(){
          Connection my=null;
          try {
-                my = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false", "root", "mink20685");
+                my = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false", "root", "password");
                } catch (Exception e) {
                     System.out.println(e);
                 }

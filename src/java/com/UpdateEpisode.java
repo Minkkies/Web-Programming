@@ -86,7 +86,7 @@ public class UpdateEpisode extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
             try (Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false",
-                    "root", "mink20685")) {
+                    "root", "password")) {
 
                 String sql;
                 if (fileContent!= null) {

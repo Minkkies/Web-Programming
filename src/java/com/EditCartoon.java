@@ -48,7 +48,7 @@ public class EditCartoon extends HttpServlet {
                 PreparedStatement pstmt = null;
                 try {
                     Class.forName("com.mysql.cj.jdbc.Driver");
-                    conn = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false", "root", "mink20685");
+                    conn = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false", "root", "password");
                     
                  String sql = "UPDATE cartoon SET title = ?, status = ?, short_story = ?, cover = ? WHERE id_cartoon = ?";
                     pstmt = conn.prepareStatement(sql);

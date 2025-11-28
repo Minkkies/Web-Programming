@@ -64,7 +64,7 @@
                 Statement s = null;
                 //    try {
                 Class.forName("com.mysql.jdbc.Driver");
-                connect = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?autoReconnect=true&useSSL=false", "root", "mink20685");
+                connect = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?autoReconnect=true&useSSL=false", "root", "password");
                 s = connect.createStatement();
                 String sql = "SELECT * FROM  episode WHERE id_episode= '" + request.getParameter("id") + "'  ";
                 //request.getParameter("id")  "id" คือตัวแปรที่แสดงอยู่ตรง Url

@@ -49,7 +49,7 @@ public class AddCategory extends HttpServlet {
             PreparedStatement pstmt = null;
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                conn = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false", "root", "mink20685");
+                conn = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false", "root", "password");
 
                 String sql = "INSERT INTO category(name_category) VALUES(?)";
                 pstmt = conn.prepareStatement(sql);

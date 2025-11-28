@@ -39,7 +39,7 @@
                                 Class.forName("com.mysql.cj.jdbc.Driver");
                                 Connection conn = DriverManager.getConnection(
                                         "jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false",
-                                        "root", "mink20685");
+                                        "root", "password");
                                 Statement stmt = conn.createStatement();
                                 ResultSet rs = stmt.executeQuery("SELECT * FROM category");
                                 while (rs.next()) {
@@ -80,7 +80,7 @@
                                 Class.forName("com.mysql.cj.jdbc.Driver");
                                 Connection conn = DriverManager.getConnection(
                                         "jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false",
-                                        "root", "mink20685"
+                                        "root", "password"
                                 );
                                 Statement stmt = conn.createStatement();
                                 String sql = "SELECT c.id_cartoon, c.title, c.status, c.short_story, c.cover, cat.name_category "

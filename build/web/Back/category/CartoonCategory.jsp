@@ -80,7 +80,7 @@
                                                 Class.forName("com.mysql.cj.jdbc.Driver");
                                                 Connection conn = DriverManager.getConnection(
                                                         "jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false",
-                                                        "root", "mink20685"
+                                                        "root", "password"
                                                 );
                                                 Statement stmt = conn.createStatement();
                                                 ResultSet rs = stmt.executeQuery("SELECT * FROM category");
@@ -128,7 +128,7 @@
                                                 Class.forName("com.mysql.cj.jdbc.Driver");
                                                 Connection conn = DriverManager.getConnection(
                                                         "jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false",
-                                                        "root", "mink20685"
+                                                        "root", "password"
                                                 );
                                                 Statement stmt = conn.createStatement();
                                                 ResultSet rs = stmt.executeQuery("SELECT * FROM category");

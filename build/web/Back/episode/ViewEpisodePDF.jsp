@@ -20,7 +20,7 @@
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection conn = DriverManager.getConnection(
             "jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false",
-            "root", "mink20685");
+            "root", "password");
 
         PreparedStatement ps = conn.prepareStatement(
             "SELECT episode_file FROM episode WHERE id_episode=?");

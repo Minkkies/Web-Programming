@@ -41,7 +41,7 @@ public class DeleteCartoon extends HttpServlet {
 
           try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false", "root", "mink20685");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/projectweb2204?allowPublicKeyRetrieval=true&useSSL=false", "root", "password");
 
             String sql = "DELETE FROM cartoon WHERE id_cartoon = ?";
             pstmt = conn.prepareStatement(sql);
